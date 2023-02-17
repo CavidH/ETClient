@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AlertfyOptions, AlertfyService, MessageType, Position} from "../../services/admin/alertfy.service";
-import {delay} from "rxjs";
+import {AlertfyService, MessageType} from "../../services/admin/alertfy.service";
 
 
 //import {alertify} from "alertify";
@@ -34,7 +33,7 @@ export class LayoutComponent implements OnInit {
 
 
     this.alertfy.message("salammm", {
-
+      messageType: MessageType.Error
     })
   }
 

@@ -25,7 +25,6 @@ export class AlertfyService {
 }
 
 export class AlertfyOptions {
-  message: string;
   messageType: MessageType = MessageType.Message;
   position: Position = Position.BottomRight;
   delaySecond: number = 3;
